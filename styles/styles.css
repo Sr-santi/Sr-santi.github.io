@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=IBM+Plex+Sans:wght@300;600&display=swap");
+header {
+  font-family: 'IBM Plex Mono', monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+header nav {
+  height: 44px;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul a {
+  color: #060a24;
+}
+
 footer {
   width: 100%;
   font-family: 'IBM Plex Mono', monospace;
@@ -38,6 +60,7 @@ footer ul {
 footer ul a {
   text-decoration: none;
   color: #060A24;
+  /* mouse effects */
 }
 
 footer ul a i {
