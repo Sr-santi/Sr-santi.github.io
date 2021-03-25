@@ -171,7 +171,6 @@ footer p {
   text-align: center;
   line-height: 22px;
   width: 227px;
-  margin-bottom: 16px;
 }
 
 footer ul {
@@ -203,6 +202,34 @@ footer ul a:hover i {
 
 footer ul a:hover:active i {
   color: rgba(6, 10, 36, 0.56);
+}
+
+@media screen and (min-width: 600px) {
+  footer div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer p {
+    margin-left: 100px;
+  }
+  footer ul li {
+    margin-right: 36px;
+  }
+  footer ul li:last-of-type {
+    margin-right: 100px;
+  }
 }
 
 * {
