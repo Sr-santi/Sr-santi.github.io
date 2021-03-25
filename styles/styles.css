@@ -204,7 +204,7 @@ footer ul a:hover:active i {
   color: rgba(6, 10, 36, 0.56);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 720px) {
   footer div {
     width: 100%;
     display: -webkit-box;
