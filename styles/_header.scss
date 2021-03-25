@@ -1,0 +1,178 @@
+
+nav {
+    font-family: 'IBM Plex Mono', monospace;
+    position: fixed;
+    height: 44px;
+    width: 100%;
+
+    //rellenar el flujo de renderizado
+    &::before {
+        width: 100%;
+        height: 44px;
+    }
+}
+
+/* logo */
+.logo{
+    line-height: 44px;
+}
+
+nav ul{
+    float: right;
+    li {
+        display: inline-block;
+        line-height: 44px;
+        a {
+            /* estilo de pantalla completa */
+            color: rgba(6,10,36,1);
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            &:hover {
+                color: rgba(0,243,187,1);
+                transition: all .5s;
+                text-decoration:line-through;
+            }
+            &:active {
+                color: rgba(6,10,36,0.56);
+                transition: all .5s;
+                text-decoration:line-through;
+            }
+        }
+    }
+}
+
+%buttons_menu {
+    /* no mostrar el logo de fontawesone */
+    width: 18px;
+    font-size: 12px;
+    color: #000000;
+    float: right;
+    line-height: 44px;
+    margin-right: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+.checkbtn, .checkbtn_close{
+    @extend %buttons_menu;
+}
+
+#check{
+    /* esconder el checkbox */
+    display: none;
+}
+
+//vista en mobile
+@media screen and (max-width: 599px){
+    /* contenido sobre el Hamburger menu */
+    .logo {
+        margin-left: 16px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 224px;
+        background: rgba(0,0,236,1);
+        top: 44px;
+        left: -100%; //posición inicial
+        text-align: left;
+        transition: all 0.5s;
+
+        li {
+            display: block;
+            margin: 0px 0px 24px 16px;
+            line-height: 30px;
+
+            &:nth-of-type(1){
+                //ajustando la primera sección del menu
+                margin: 16px 0px 24px 16px;
+            }
+
+            a {
+                font-size: 16px;
+                color: white;
+            }
+        }
+    }
+
+    #check:checked ~ ul{
+        //activando el menu
+        left: 0; 
+    }
+
+    #check:checked {
+        //cambio de botones
+        ~.checkbtn {
+            display: none;
+        }
+        ~.checkbtn_close{
+            display: block;
+        }
+    }
+}
+//-----------------------------------------------------------------------
+
+//vista tablet
+@media screen and (max-width: 1280px) and (min-width: 600px){
+    nav {
+        height: 60px;
+        //rellenar el flujo de renderizado
+        &::before {
+            height: 60px;
+        }
+
+        li {
+            margin-left: 5px;
+            a {
+                font-size: 14px;
+                line-height: 60px;
+                margin-right:20px ;
+            }
+        }
+        
+    }
+
+    label.logo{
+        line-height: 60px;
+        padding-left: 40px;
+        img {transform: scale(1.25,1.25);}  
+    }
+}
+
+//pantallas grandes
+@media screen and (min-width: 1281px){
+    nav {
+        height: 80px;
+        //rellenar el flujo de renderizado
+        &::before {
+            height: 80px;
+        }
+
+        li {
+            margin-left: 5px;
+
+            &:nth-of-type(4){
+                //ajustando la primera sección del menu
+                margin: 0px 100px 0px 0px;
+            }
+            a {
+                font-size: 14px;
+                line-height: 80px;
+                margin-right:48px ;
+            }
+        }
+        
+    }
+
+    label.logo{
+        line-height: 80px;
+        padding-left: 100px;
+        img {transform: scale(1.5,1.5);}  
+    }
+}
