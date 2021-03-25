@@ -12,14 +12,24 @@
 </head>
 <body>
     <header>
-        <img src="/images/logo.svg" alt="company_logo">
         <nav>
-            <label class="logo"></label>
+            <input type="checkbox" id=check>
+            <!-- relacionando checkbox con label y 
+                haciendo clickeable fontawesone -->
+            <label for="check" class="checkbtn">
+                <i  class="fas fa-bars fa-2x"></i>
+            </label>
+            <label for="check" class="checkbtn_close">
+                <i  class="fas fa-times fa-2x"></i>
+            </label>
+            <label class="logo"><img src="/images/logo.svg" alt="logo"></label> <!-- poner logo aqui -->
+            
             <ul>
-                <li><a href="#">EPISODIOS</a></li>
-                <li><a href="#">NOSOTROS</a></li>
-                <li><a href="#">ENTREVISTAS</a></li>
-                <li><a href="#">TÓPICOS</a></li>
+                 <!-- opciones de menu -->
+                <li><a href="#">Episodios</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Entrevistas</a></li>
+                <li><a href="#">Tópicos</a></li>
             </ul>
         </nav>
     </header>
