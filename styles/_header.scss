@@ -1,15 +1,11 @@
 
 nav {
     font-family: 'IBM Plex Mono', monospace;
-    position: fixed;
+    position: sticky;
     height: 44px;
     width: 100%;
 
     //rellenar el flujo de renderizado
-    &::before {
-        width: 100%;
-        height: 44px;
-    }
 }
 
 /* logo */
@@ -123,9 +119,6 @@ nav ul{
     nav {
         height: 60px;
         //rellenar el flujo de renderizado
-        &::before {
-            height: 60px;
-        }
 
         li {
             margin-left: 5px;
@@ -150,9 +143,6 @@ nav ul{
     nav {
         height: 80px;
         //rellenar el flujo de renderizado
-        &::before {
-            height: 80px;
-        }
 
         li {
             margin-left: 5px;
