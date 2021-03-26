@@ -324,8 +324,8 @@ nav ul li a:active {
   height: 1203px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(#0000a3));
   background-image: linear-gradient(blue, #0000a3);
-  -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
-          clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+  -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
+          clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
 }
 
 footer {
