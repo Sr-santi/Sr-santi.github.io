@@ -1,13 +1,28 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=IBM+Plex+Sans:wght@300;600&display=swap");
-nav {
-  font-family: 'IBM Plex Mono', monospace;
+header {
   position: -webkit-sticky;
   position: sticky;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+          backdrop-filter: saturate(180%) blur(5px);
+  z-index: 1;
+}
+
+nav {
+  font-family: 'IBM Plex Mono', monospace;
+  /* position: static; */
   height: 44px;
   width: 100%;
 }
 
+/* .inner_header {
+    width: 100%;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+} */
 /* logo */
 .logo {
   line-height: 44px;
@@ -302,6 +317,15 @@ nav ul li a:active {
   .home .btn {
     margin-left: 200px;
   }
+}
+
+.episodes {
+  width: 100%;
+  height: 1203px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(#0000a3));
+  background-image: linear-gradient(blue, #0000a3);
+  -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+          clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
 }
 
 footer {
