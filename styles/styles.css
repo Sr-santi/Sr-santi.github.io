@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=IBM+Plex+Sans:wght@300;600&display=swap");
 nav {
   font-family: 'IBM Plex Mono', monospace;
@@ -146,6 +147,160 @@ nav ul li a:active {
   label.logo img {
     -webkit-transform: scale(1.5, 1.5);
             transform: scale(1.5, 1.5);
+  }
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home h1 {
+  margin-top: 29px;
+  padding-left: 16px;
+  padding-right: 40px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #060a24;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.home h1 span {
+  text-decoration: line-through;
+}
+
+.home h1 #blue {
+  color: blue;
+  text-decoration: none;
+}
+
+.home p {
+  margin-top: 16px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  padding: 0px 16px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.home p::after {
+  content: "Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.";
+}
+
+.home .btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 36px;
+  margin-bottom: 24px;
+  width: 288px;
+  height: 48px;
+  background: #00f3bb;
+  font-family: 'IBM Plex Mono', monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.home .btn a {
+  text-decoration: none;
+  color: #060a24;
+  text-transform: uppercase;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.home .btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#00f0b8), to(#0000fe));
+  background: linear-gradient(left, #00f0b8, #0000fe);
+}
+
+.home .btn:hover a {
+  color: white;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .home {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .home h1 {
+    padding-left: 0px;
+    margin-left: 40px;
+  }
+  .home p {
+    width: 350px;
+    padding-left: 0px;
+    margin-left: 40px;
+  }
+  .home .btn {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  .home {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .home h1 {
+    font-size: 50px;
+    padding-left: 0px;
+    margin-left: 100px;
+  }
+  .home p {
+    font-size: 16px;
+    width: 628px;
+    padding-left: 0px;
+    margin-left: 100px;
+  }
+  .home p:after {
+    content: "El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.";
+  }
+  .home .btn {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .home {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .home h1 {
+    font-size: 64px;
+    padding-left: 0px;
+    margin-left: 200px;
+  }
+  .home p {
+    font-size: 16px;
+    width: 628px;
+    padding-left: 0px;
+    margin-left: 200px;
+  }
+  .home p:after {
+    content: "El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.";
+  }
+  .home .btn {
+    margin-left: 200px;
   }
 }
 
