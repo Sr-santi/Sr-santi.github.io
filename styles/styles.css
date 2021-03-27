@@ -326,6 +326,7 @@ nav ul li a:active {
   background-image: linear-gradient(blue, #0000a3);
   -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
           clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
+  /* transform: skew(0deg,-5deg); */
 }
 
 footer {
