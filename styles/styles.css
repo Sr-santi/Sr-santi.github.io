@@ -321,12 +321,83 @@ nav ul li a:active {
 
 .episodes {
   width: 100%;
-  height: 1203px;
+  height: 1220px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(#0000a3));
   background-image: linear-gradient(blue, #0000a3);
-  -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
-          clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
+  -webkit-clip-path: polygon(0% calc(0% + 7vw), 100% 0%, 100% calc(100% - 7vw), 0% 100%);
+          clip-path: polygon(0% calc(0% + 7vw), 100% 0%, 100% calc(100% - 7vw), 0% 100%);
   /* transform: skew(0deg,-5deg); */
+}
+
+.episodes h1 {
+  padding: 64px 0px 21px 16px;
+  font-size: 36px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.episodes .podcast {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 11px;
+  padding-left: 11px;
+  padding-right: 11px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .episodes {
+    height: 1280px;
+  }
+  .episodes h1 {
+    padding-left: 40px;
+  }
+  .episodes .podcast {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  .episodes {
+    height: 900px;
+  }
+  .episodes h1 {
+    padding-left: 100px;
+    padding-top: 110px;
+  }
+  .episodes .podcast {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .episodes {
+    height: 1042px;
+  }
+  .episodes h1 {
+    font-size: 48px;
+    padding: 186px 0px 26px 200px;
+  }
+  .episodes .podcast {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 72px 72px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 footer {
@@ -384,7 +455,7 @@ footer ul a:hover:active i {
   color: rgba(6, 10, 36, 0.56);
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   footer div {
     width: 100%;
     display: -webkit-box;

@@ -73,44 +73,44 @@ $text-devices: "El portal de podcasts que explora el mundo de la programación y
 
 //tablets
 @media screen and (min-width:400px) and (max-width:800px){
-    $space: 40px;
+    $space_home_tablets: 40px;
     .home {
         align-items: flex-start;
 
         h1 {
             padding-left: 0px;
-            margin-left: $space;
+            margin-left: $space_home_tablets;
         }
 
         p {
             width: 350px;
             padding-left: 0px;
-            margin-left: $space;
+            margin-left: $space_home_tablets;
         }
 
         .btn {
-            margin-left: $space;
+            margin-left: $space_home_tablets;
         }
     }
 }
 
 //large-devices
 @media screen and (min-width: 801px) and (max-width:1200px){
-    $space: 100px;
+    $space_home_large_devices: 100px;
     .home {
         align-items: flex-start;
 
         h1 {
             font-size: 50px;
             padding-left: 0px;
-            margin-left: $space;
+            margin-left: $space_home_large_devices;
         }
 
         p {
             font-size: 16px;
             width: 628px;
             padding-left: 0px;
-            margin-left: $space;
+            margin-left: $space_home_large_devices;
 
             &:after {
                 content:$text-devices;
@@ -118,28 +118,28 @@ $text-devices: "El portal de podcasts que explora el mundo de la programación y
         }
 
         .btn {
-            margin-left: $space;
+            margin-left: $space_home_large_devices;
         }
     }
 }
 
 //desktop screen
 @media screen and (min-width: 1201px){
-    $space: 200px;
+    $space_home_desktop: 200px;
     .home {
         align-items: flex-start;
 
         h1 {
             font-size: 64px;
             padding-left: 0px;
-            margin-left: $space;
+            margin-left: $space_home_desktop;
         }
 
         p {
             font-size: 16px;
             width: 628px;
             padding-left: 0px;
-            margin-left: $space;
+            margin-left: $space_home_desktop;
 
             &:after {
                 content:$text-devices;
@@ -147,7 +147,7 @@ $text-devices: "El portal de podcasts que explora el mundo de la programación y
         }
 
         .btn {
-            margin-left: $space;
+            margin-left: $space_home_desktop;
         }
     }
 }

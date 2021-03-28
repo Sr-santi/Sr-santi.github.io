@@ -1,9 +1,96 @@
 .episodes {
     width: 100%;
-    height: 1203px;
+    height: 1220px;
     background-image: linear-gradient(rgba(0,0,255,1),rgba(0,0,163,1));
-    clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
+    clip-path: polygon(0% calc(0% + 7vw), 100% 0%, 100% calc(100% - 7vw), 0% 100%);
     /* transform: skew(0deg,-5deg); */
 
+    h1 {
+        padding: 64px 0px 21px 16px;
+        font-size: 36px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 300;
+        color: white;
+        transition: all 0.5s;
+    }
 
+    .podcast {
+        display: grid;
+
+        width: 100%;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        row-gap: 11px;
+        padding-left: 11px;
+        padding-right: 11px;
+        transition: all 0.5s;
+    }
+}
+
+//tablets
+@media screen and (min-width:400px) and (max-width:800px){
+    $space_episodes_tablets: 40px;
+    $height_episodes_tablets: 1280px;
+
+    .episodes {
+        height: $height_episodes_tablets;
+
+        h1 {
+            padding-left: $space_episodes_tablets;
+        }
+
+        .podcast {
+            padding-left: $space_episodes_tablets;
+            padding-right: $space_episodes_tablets;
+        }
+
+    }
+}
+
+//large-devices
+@media screen and (min-width: 801px) and (max-width:1200px){
+    $space_episodes_large_devices: 100px;
+    $space_episodes_large_devices_audios: 50px;
+    $height_episodes_large_devices: 900px;
+    
+    .episodes {
+        height: $height_episodes_large_devices;
+
+        h1 {
+            padding-left: $space_episodes_large_devices;
+            padding-top: 110px;
+        }
+
+        .podcast {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 20px;
+            padding-left: $space_episodes_large_devices_audios;
+            padding-right: $space_episodes_large_devices_audios;
+        }
+
+    }
+}
+
+//desktop screen
+@media screen and (min-width: 1201px){
+    $space_episodes_desktop: 200px;
+    $space_episodes_desktop_audios: 100px;
+    $height_episodes_desktop: 1042px;
+    
+    .episodes {
+        height: $height_episodes_desktop;
+
+        h1 {
+            font-size: 48px;
+            padding: 186px 0px 26px $space_episodes_desktop;
+        }
+
+        .podcast {
+            grid-template-columns: 1fr 1fr;
+            gap: 72px 72px;
+            padding-left: $space_episodes_desktop_audios;
+            padding-right: $space_episodes_desktop_audios;
+        }
+
+    }
 }
