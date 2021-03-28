@@ -326,10 +326,9 @@ nav ul li a:active {
   background-image: linear-gradient(blue, #0000a3);
   -webkit-clip-path: polygon(0% calc(0% + 7vw), 100% 0%, 100% calc(100% - 7vw), 0% 100%);
           clip-path: polygon(0% calc(0% + 7vw), 100% 0%, 100% calc(100% - 7vw), 0% 100%);
-  /* transform: skew(0deg,-5deg); */
 }
 
-.episodes h1 {
+.episodes h2 {
   padding: 64px 0px 21px 16px;
   font-size: 36px;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -357,7 +356,7 @@ nav ul li a:active {
   .episodes {
     height: 1280px;
   }
-  .episodes h1 {
+  .episodes h2 {
     padding-left: 40px;
   }
   .episodes .podcast {
@@ -370,7 +369,7 @@ nav ul li a:active {
   .episodes {
     height: 900px;
   }
-  .episodes h1 {
+  .episodes h2 {
     padding-left: 100px;
     padding-top: 110px;
   }
@@ -387,7 +386,7 @@ nav ul li a:active {
   .episodes {
     height: 1042px;
   }
-  .episodes h1 {
+  .episodes h2 {
     font-size: 48px;
     padding: 186px 0px 26px 200px;
   }
@@ -397,6 +396,109 @@ nav ul li a:active {
     gap: 72px 72px;
     padding-left: 100px;
     padding-right: 100px;
+  }
+}
+
+.info {
+  width: 100%;
+  -webkit-transform: translate(0px, -90px);
+          transform: translate(0px, -90px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info img {
+  width: 320px;
+}
+
+.info h2 {
+  width: 280px;
+  padding: 27px 0px 8px 16px;
+  font-size: 36px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  color: #060a24;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.info p {
+  padding: 0px 16px 10px 16px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info div {
+    width: 400px;
+  }
+  .info h2 {
+    width: 100%;
+    padding-left: 40px;
+  }
+  .info p {
+    font-size: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  .info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translate(0px, -100px);
+            transform: translate(0px, -100px);
+  }
+  .info div {
+    width: 464px;
+  }
+  .info h2 {
+    width: 100%;
+    font-size: 42px;
+    padding-left: 40px;
+  }
+  .info p {
+    font-size: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translate(0px, -170px);
+            transform: translate(0px, -170px);
+  }
+  .info img {
+    width: 457px;
+    margin-left: 200px;
+  }
+  .info div {
+    width: 464px;
+  }
+  .info h2 {
+    width: 100%;
+    font-size: 48px;
+    padding-left: 62px;
+    padding-bottom: 24px;
+  }
+  .info p {
+    font-size: 16px;
+    padding-left: 62px;
+    padding-right: 62px;
   }
 }
 
