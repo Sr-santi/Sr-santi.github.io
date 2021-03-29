@@ -1,0 +1,105 @@
+.topics {
+    transform: translate(0px,-90px);
+    h2 {
+        width: 280px;
+        padding: 48px 0px 24px 16px;
+        @extend %title_format;
+    }
+    
+    .topics_gallery{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 48px;
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 36px;
+            h3 {
+                font-family: 'IBM Plex Sans', sans-serif;
+                text-align: center;
+                width: 220px;
+                font-size: 24px;
+                color: rgba(6,10,36,1);
+            }
+
+            &:last-of-type {
+                padding-bottom: 0px;
+
+                h3 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+//tablets
+@media screen and (min-width:400px) and (max-width:800px){
+    $space_topics_tablets: 40px;
+    .topics{
+        h2 {
+            width: 100%;
+            padding-left: $space_topics_tablets;
+        }
+        
+        .topics_gallery{
+            .item {
+                &:last-of-type {
+                    h3 {
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//large-devices
+@media screen and (min-width: 801px) and (max-width:1200px){
+    $space_topics_large_devices: 100px;
+
+    .topics{
+        transform: translate(0px,-100px);
+        h2 {
+            width: 100%;
+            padding: 64px 0px 40px $space_topics_large_devices;
+        }
+        
+        .topics_gallery{
+            .item {
+                &:last-of-type {
+                    h3 {
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//desktop screen
+@media screen and (min-width: 1201px){
+    $space_topics_desktop: 200px;
+
+    .topics{
+        transform: translate(0px,-170px);
+        h2 {
+            width: 100%;
+            padding: 64px 0px 56px $space_topics_desktop;
+        }
+        
+        .topics_gallery{
+            .item {
+                &:last-of-type {
+                    h3 {
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }
+}

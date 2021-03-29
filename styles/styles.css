@@ -560,6 +560,96 @@ nav ul li a:active {
   }
 }
 
+.topics {
+  -webkit-transform: translate(0px, -90px);
+          transform: translate(0px, -90px);
+}
+
+.topics h2 {
+  width: 280px;
+  padding: 48px 0px 24px 16px;
+}
+
+.topics .topics_gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 48px;
+}
+
+.topics .topics_gallery .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 36px;
+}
+
+.topics .topics_gallery .item h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+  width: 220px;
+  font-size: 24px;
+  color: #060a24;
+}
+
+.topics .topics_gallery .item:last-of-type {
+  padding-bottom: 0px;
+}
+
+.topics .topics_gallery .item:last-of-type h3 {
+  width: 100%;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .topics h2 {
+    width: 100%;
+    padding-left: 40px;
+  }
+  .topics .topics_gallery .item:last-of-type h3 {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  .topics {
+    -webkit-transform: translate(0px, -100px);
+            transform: translate(0px, -100px);
+  }
+  .topics h2 {
+    width: 100%;
+    padding: 64px 0px 40px 100px;
+  }
+  .topics .topics_gallery .item:last-of-type h3 {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .topics {
+    -webkit-transform: translate(0px, -170px);
+            transform: translate(0px, -170px);
+  }
+  .topics h2 {
+    width: 100%;
+    padding: 64px 0px 56px 200px;
+  }
+  .topics .topics_gallery .item:last-of-type h3 {
+    width: 220px;
+  }
+}
+
 footer {
   width: 100%;
   font-family: 'IBM Plex Mono', monospace;
@@ -650,7 +740,7 @@ footer ul a:hover:active i {
           box-sizing: border-box;
 }
 
-.info h2, .guests h2 {
+.info h2, .guests h2, .topics h2 {
   font-size: 36px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 300;
