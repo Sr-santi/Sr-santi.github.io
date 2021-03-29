@@ -3,12 +3,21 @@
 @import "home";
 @import "episodes";
 @import "info";
+@import "guests";
 @import "footer";
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+%title_format {
+    font-size: 36px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    color: rgba(6,10,36,1);
+    transition: all 0.5s;
 }
 
 /* 
