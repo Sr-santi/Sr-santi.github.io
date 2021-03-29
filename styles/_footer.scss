@@ -4,13 +4,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px 0px 31px 0px;
+    padding: 0px 0px 31px 0px;
     z-index: 1;
 
     p {
         font-size: 14px;
         text-align: center;
         line-height: 22px;
+        padding-bottom: 16px;
         width: 227px;
     }
 
@@ -56,6 +57,7 @@ footer {
 
         p {
             margin-left: 100px;
+            padding-bottom: 0px;
         }
 
         ul {
