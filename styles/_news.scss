@@ -21,3 +21,23 @@
         
     }
 }
+
+@media screen  and (min-width: 800px){
+    .news {
+        transform: translate(0px,-90px);
+        height: 518px;
+
+        h2 {
+            padding-top: 213px;
+            width: 100%;
+        }
+
+        .btn {
+            width: 345px;
+            a {
+                font-size: 18px;
+            }
+            
+        }
+    }
+}
