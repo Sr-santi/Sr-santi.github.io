@@ -1,0 +1,134 @@
+$text-mobile: "Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.";
+$text-devices: "El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.";
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        margin-top: 29px;
+        padding-left: 16px;
+        padding-right: 40px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+        color: rgba(6,10,36,1);
+        transition: all 0.5s;
+        
+        span{
+            text-decoration:line-through;
+        }
+
+        #blue {
+            color: blue;
+            text-decoration: none;
+        }
+    }
+
+    p {
+        margin-top: 16px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 14px;
+        padding: 0px 16px;
+        transition: all 0.5s;
+
+        &::after {
+            content: $text-mobile;
+        }
+    }
+
+    .btn {
+        //position text----
+        margin-top: 36px;
+        margin-bottom: 24px;
+    }
+}
+
+//tablets
+@media screen and (min-width:400px) and (max-width:800px){
+    $space_home_tablets: 40px;
+    .home {
+        align-items: flex-start;
+
+        h1 {
+            padding-left: 0px;
+            margin-left: $space_home_tablets;
+        }
+
+        p {
+            width: 350px;
+            padding-left: 0px;
+            margin-left: $space_home_tablets;
+        }
+
+        .btn {
+            margin-left: $space_home_tablets;
+        }
+    }
+}
+
+//large-devices
+@media screen and (min-width: 801px) and (max-width:1200px){
+    $space_home_large_devices: 100px;
+    .home {
+        align-items: flex-start;
+
+        h1 {
+            font-size: 50px;
+            padding-left: 0px;
+            margin-left: $space_home_large_devices;
+        }
+
+        p {
+            font-size: 16px;
+            width: 628px;
+            padding-left: 0px;
+            margin-left: $space_home_large_devices;
+
+            &:after {
+                content:$text-devices;
+            }
+        }
+
+        .btn {
+            margin-left: $space_home_large_devices;
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+//desktop screen
+@media screen and (min-width: 1201px){
+    $space_home_desktop: 200px;
+    .home {
+        align-items: flex-start;
+
+        h1 {
+            font-size: 64px;
+            padding-left: 0px;
+            margin-left: $space_home_desktop;
+        }
+
+        p {
+            font-size: 16px;
+            width: 628px;
+            padding-left: 0px;
+            margin-left: $space_home_desktop;
+
+            &:after {
+                content:$text-devices;
+            }
+        }
+
+        .btn {
+            margin-left: $space_home_desktop;
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+}

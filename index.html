@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Imports and links-->
+    <script src="https://kit.fontawesome.com/584408a87e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <input type="checkbox" id=check>
+            <!-- relacionando checkbox con label y 
+                haciendo clickeable fontawesone -->
+            <label for="check" class="checkbtn">
+                <i  class="fas fa-bars fa-2x"></i>
+            </label>
+            <label for="check" class="checkbtn_close">
+                <i  class="fas fa-times fa-2x"></i>
+            </label>
+            <label class="logo"><img src="/images/logo.svg" alt="logo"></label> <!-- poner logo aqui -->
+            
+            <ul>
+                 <!-- opciones de menu -->
+                <li><a href="#episodes">Episodios</a></li>
+                <li><a href="#info">Nosotros</a></li>
+                <li><a href="#guests">Entrevistas</a></li>
+                <li><a href="#topics">Tópicos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <h1>Hello <span>world</span> pale blue dot<span id="blue">.</span></h1>
+            <p></p>
+            <div class="btn"><a href="#info">conocé más</a></div>
+        </section>
+        <section id="episodes" class="episodes">
+            <h2>Episodios</h2>
+            <div class="podcast">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </section>
+        <section id="info" class="info">
+            <img src="/images/phone.png" alt="phone_photo">
+            <div>
+                <h2>De dónde venimos</h2>
+                <p class="text">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p> 
+                <p class="text">Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+            </div>
+        </section>
+        <section id="guests" class="guests">
+            <h2>Invitadas/os estelares</h2>
+            <div class="gallery">
+                <img src="images/grace-hopper.png" alt="Grace Hooper">
+                <img src="images/Katie-Bouman.png" alt="katie Bouman">
+                <img src="images/Margaret_Hamilton.png" alt="Margaret Hamilton">
+                <img src="images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="1950 computer">
+                <img src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Eniac">
+                <img src="images/susan-kare.png" alt="susan kare">
+            </div>
+        </section>
+        <section id="topics" class="topics">
+            <h2>Algunos de Nuestros temas</h2>
+            <div class="topics_gallery">
+                <div class="item">
+                    <img src="/images/icon1.svg" alt="">
+                    <h3>Trabajo remoto</h3>
+                </div>
+                <div class="item">
+                    <img src="/images/icon2.svg" alt="">
+                    <h3>Repensando la programación</h3>
+                </div>
+                <div class="item">
+                    <img src="/images/icon3.svg" alt="">
+                    <h3>Bases del código</h3>
+                </div>
+                <div class="item">
+                    <img src="/images/icon4.svg" alt="">
+                    <h3>Seguridad informática</h3>
+                </div>
+            </div>
+        </section>
+        <section id="news" class="news">
+            <h2>¿Querés las últimas novedades?</h2>
+            <div class="btn"><a href="#episodes">escuchá los episodios</a></div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>© 2019— Hello blue pale dot </p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-spotify"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

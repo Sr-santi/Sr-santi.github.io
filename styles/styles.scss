@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=IBM+Plex+Sans:wght@300;600&display=swap');
+@import "header";
+@import "home";
+@import "episodes";
+@import "info";
+@import "guests";
+@import "topics";
+@import "news";
+@import "footer";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//global classes
+.btn {
+    //position text----
+    align-items: center;
+    justify-content: center;
+
+    //figure-----------
+    width: 288px;
+    height: 48px;
+    background: rgba(0,243,187,1);
+    font-family: 'IBM Plex Mono', monospace;
+    display: flex;
+    transition: all 0.5s;
+    
+    a {
+        text-align: center;
+        width: 100%;
+        text-decoration: none;
+        color: rgba(6,10,36,1);
+        text-transform: uppercase;
+        transition: color 0.5s;
+        font-size: 16px;
+    }
+
+    &:hover {
+        background: linear-gradient(left, rgba(0,240,184,1),rgba(0,0,254,1));
+        a {
+            color: white;
+        }
+    }
+}
+
+//extends
+%title_format {
+    font-size: 36px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    color: rgba(6,10,36,1);
+    transition: all 0.5s;
+}
+
+/* 
+font-family: 'IBM Plex Mono', monospace;
+font-family: 'IBM Plex Sans', sans-serif;
+*/
